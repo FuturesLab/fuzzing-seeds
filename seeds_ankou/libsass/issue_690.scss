@@ -1,0 +1,7 @@
+test {
+  left: expression(callSomeFunc());
+  content: expression("Smile :-)");
+}
+
+<===> error
+Error: Invalid CSS after "...sion("Smile :-)": expected ";", was "");"

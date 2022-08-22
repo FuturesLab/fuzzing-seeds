@@ -1,0 +1,20 @@
+// line-endings in this file must be CRLF
+@import url("foo\
+bar");
+@import url("foo
+bar");
+@import url(foo
+bar);
+
+<===> error-dart-sass
+Error: Expected ".
+  ,
+4 | @import url("foo
+  |                 ^
+  '
+  input.scss 4:17  root stylesheet
+
+<===> output.css
+@import url("foobar");
+@import url("foo\a bar");
+@import url(foo bar);

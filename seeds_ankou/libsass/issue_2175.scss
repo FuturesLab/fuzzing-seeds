@@ -1,0 +1,8 @@
+a:nth-child() {
+  color: yellowgreen;
+}
+
+<===> error
+Error: Invalid CSS after "a:nth-child(": expected An+B expression, was ")"
+        on line 2 of input.scss
+  Use --trace for backtrace.

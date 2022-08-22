@@ -1,0 +1,17 @@
+@mixin parent {
+  @mixin nested {
+    foo: bar;
+  }
+
+  @include nested;
+}
+
+
+test {
+  @include parent;
+}
+
+<===> error
+Error: Mixins may not be defined within control directives or other mixins.
+        on line 2 of input.scss
+  Use --trace for backtrace.

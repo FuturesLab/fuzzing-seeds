@@ -1,0 +1,6 @@
+$zzz: zzz;
+a[data-foo="#{$zzz}"] { a: b; }
+<===> output.css
+a[data-foo="zzz"] {
+  a: b;
+}

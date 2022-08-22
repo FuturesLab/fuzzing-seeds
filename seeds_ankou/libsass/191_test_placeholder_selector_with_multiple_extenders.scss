@@ -1,0 +1,8 @@
+%foo {color: blue}
+.bar {@extend %foo}
+.baz {@extend %foo}
+
+<===> output.css
+.bar, .baz {
+  color: blue;
+}

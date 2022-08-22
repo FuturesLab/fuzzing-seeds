@@ -1,0 +1,10 @@
+@each $i in (1) {
+  @function foo() {
+    @return 'foo';
+  }
+}
+
+<===> error
+Error: Functions may not be defined within control directives or other mixins.
+        on line 2 of input.scss
+  Use --trace for backtrace.

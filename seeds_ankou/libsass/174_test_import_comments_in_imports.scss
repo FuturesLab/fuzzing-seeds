@@ -1,0 +1,8 @@
+@import "foo.css", // this is a comment
+        "bar.css", /* this is another comment */
+        "baz.css"; // this is a third comment
+
+<===> output.css
+@import url(foo.css);
+@import url(bar.css);
+@import url(baz.css);

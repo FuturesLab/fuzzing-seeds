@@ -1,0 +1,27 @@
+@function foo() { @return null; }
+$foo: null;
+a {
+    foo: bar;
+    variable: $foo;
+    function: foo();
+    unquote: unquote($foo);
+}
+
+b {
+    variable: $foo;
+    function: foo();
+    unquote: unquote($foo);
+}
+
+<===> error-dart-sass
+Error: $string: null is not a string.
+  ,
+7 |     unquote: unquote($foo);
+  |              ^^^^^^^^^^^^^
+  '
+  input.scss 7:14  root stylesheet
+
+<===> output.css
+a {
+  foo: bar;
+}

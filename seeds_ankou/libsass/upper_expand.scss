@@ -1,0 +1,7 @@
+@for $i from 1 through "foo" {
+	bar { baz: $i; }
+}
+<===> error
+Error: "foo" is not an integer.
+        on line 1 of input.scss
+  Use --trace for backtrace.

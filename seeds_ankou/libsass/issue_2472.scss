@@ -1,0 +1,40 @@
+@function dark(
+  $color,
+  $args...
+) {
+  @return call('darken', $color, $args...);
+}
+
+@function dark2(
+  $args...
+) {
+  @return call('darken', $args...);
+}
+
+$arg: join((), 5%);
+
+.single {
+  direct: darken(#102030, 5%);
+  arg: darken(#102030, $arg...);
+  call: call('darken', #102030, $arg...);
+  function: dark(#102030, 5%);
+  function2: dark2(#102030, 5%);
+}
+<===> output.css
+.single {
+  direct: #0a131d;
+  arg: #0a131d;
+  call: #0a131d;
+  function: #0a131d;
+  function2: #0a131d;
+}
+
+<===> warning
+DEPRECATION WARNING: Passing a string to call() is deprecated and will be illegal
+in Sass 4.0. Use call(function-reference(foobar)) instead.
+
+DEPRECATION WARNING: Passing a string to call() is deprecated and will be illegal
+in Sass 4.0. Use call(function-reference(min)) instead.
+
+DEPRECATION WARNING: Passing a string to call() is deprecated and will be illegal
+in Sass 4.0. Use call(fu

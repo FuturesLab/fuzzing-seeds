@@ -1,0 +1,9 @@
+// incorectly terminated
+.error {
+  @include incorrectly-terminated($a,$b,;
+}
+
+<===> error
+Error: Invalid CSS after "...rminated($a,$b,": expected ")", was ";"
+        on line 3 of input.scss
+  Use --trace for backtrace.

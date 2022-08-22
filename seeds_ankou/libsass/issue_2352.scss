@@ -1,0 +1,14 @@
+$theme: (red: #D700EE);
+
+@function test($args...) {
+	@return #000;
+}
+
+.test {
+	color: test($theme...);
+}
+<===> error
+Error: Variable keyword argument map must have string keys.
+       #ff0000 is not a string in (red: #D700EE).
+        on line 8 of input.scss
+  Use --trace for backtrace.

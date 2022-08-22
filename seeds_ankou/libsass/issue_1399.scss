@@ -1,0 +1,14 @@
+foo {
+  foo: 3 - "bar";
+  foo: (3 - "bar");
+  foo: 3 / "bar";
+  foo: (3 / "bar");
+}
+
+<===> output.css
+foo {
+  foo: 3-"bar";
+  foo: 3-"bar";
+  foo: 3 / "bar";
+  foo: 3/"bar";
+}

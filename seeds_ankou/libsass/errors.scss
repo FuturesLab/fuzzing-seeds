@@ -1,0 +1,7 @@
+$map: ( foo: bar );
+test { baz: $map; }
+
+<===> error
+Error: (foo: bar) isn't a valid CSS value.
+        on line 2 of input.scss
+  Use --trace for backtrace.

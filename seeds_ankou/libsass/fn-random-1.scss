@@ -1,0 +1,7 @@
+foo {
+  test: random(1.5);
+}
+<===> error
+Error: Expected $limit to be an integer but got 1.5 for `random'
+        on line 2 of input.scss
+  Use --trace for backtrace.

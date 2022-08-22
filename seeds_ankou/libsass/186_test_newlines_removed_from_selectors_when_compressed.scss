@@ -1,0 +1,12 @@
+a
+, b {
+  z & {
+    display: block;
+  }
+}
+
+<===> output.css
+z a
+, z b {
+  display: block;
+}

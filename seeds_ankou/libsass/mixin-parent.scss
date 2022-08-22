@@ -1,0 +1,16 @@
+@mixin parent {
+  @content;
+}
+
+@include parent() {
+  body.immobile & {
+    margin-bottom: 0;
+  }
+}
+
+<===> error
+Error: Base-level rules cannot contain the parent-selector-referencing character '&'.
+        on line 6 of input.scss, in `@content'
+        from line 2 of input.scss, in `parent'
+        from line 5 of input.scss
+  Use --trace for backtrace.

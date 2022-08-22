@@ -1,0 +1,14 @@
+foo {
+  bar &.baz! .bip {a: b}}
+
+foo bar {
+  bar &.baz! .bip {c: d}}
+
+<===> output.css
+bar foo.baz! .bip {
+  a: b;
+}
+
+bar foo bar.baz! .bip {
+  c: d;
+}

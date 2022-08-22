@@ -1,0 +1,21 @@
+$empty-list: ();
+
+@function foo($args...) {
+    @return call(bar, $args...);
+}
+
+@function bar($list) {
+    @return length($list);
+}
+
+test {
+  test: foo($empty-list);
+}
+<===> output.css
+test {
+  test: 0;
+}
+
+<===> warning
+DEPRECATION WARNING: Passing a string to call() is deprecated and will be illegal
+in Sass 4.0. Use call(function-reference(bar)) instead.

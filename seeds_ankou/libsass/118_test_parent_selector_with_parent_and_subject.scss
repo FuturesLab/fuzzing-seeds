@@ -1,0 +1,8 @@
+$subject: "!";
+foo {
+  bar &.baz#{$subject} .bip {c: d}}
+
+<===> output.css
+bar foo.baz! .bip {
+  c: d;
+}

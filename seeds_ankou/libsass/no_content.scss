@@ -1,0 +1,11 @@
+// A content block may not be passed to a mixin that doesn't include `@content`.
+@mixin no-content {}
+@include no-content {}
+
+<===> error
+Error: Mixin doesn't accept a content block.
+  ,
+3 | @include no-content {}
+  | ^^^^^^^^^^^^^^^^^^^^^^
+  '
+  input.scss 3:1  root stylesheet

@@ -1,0 +1,7 @@
+foo {
+  test: random(#{5});
+}
+<===> error
+Error: $limit: "5" is not a number for `random'
+        on line 2 of input.scss
+  Use --trace for backtrace.

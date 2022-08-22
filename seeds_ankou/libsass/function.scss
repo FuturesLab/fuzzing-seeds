@@ -1,0 +1,19 @@
+@function c() {
+  @warn test;
+  @return d;
+}
+
+a {
+  b: {
+    c: c();
+  }
+}
+
+<===> output.css
+a {
+  b-c: d;
+}
+
+<===> warning
+WARNING: test
+         on line 2 of input.scss

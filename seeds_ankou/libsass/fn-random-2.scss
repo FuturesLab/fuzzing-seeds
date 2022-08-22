@@ -1,0 +1,7 @@
+foo {
+  test: random(-4);
+}
+<===> error
+Error: $limit -4 must be greater than or equal to 1 for `random'
+        on line 2 of input.scss
+  Use --trace for backtrace.

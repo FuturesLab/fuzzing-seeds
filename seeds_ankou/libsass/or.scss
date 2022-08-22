@@ -1,0 +1,12 @@
+@function or() {
+  @return "or";
+}
+
+test {
+  or: or();
+}
+
+<===> error
+Error: Invalid function name "or".
+        on line  of input.scss
+  Use --trace for backtrace.

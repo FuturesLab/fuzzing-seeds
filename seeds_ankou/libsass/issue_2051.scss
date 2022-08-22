@@ -1,0 +1,14 @@
+:global(.thing) {
+    color: red;
+}
+
+:global(.thing[disabled]) {
+    @extend .thing;
+    background: blue;
+}
+<===> error
+Error: ":global(.thing[disabled])" failed to @extend ".thing".
+       The selector ".thing" was not found.
+       Use "@extend .thing !optional" if the extend should be able to fail.
+        on line 6 of input.scss
+  Use --trace for backtrace.

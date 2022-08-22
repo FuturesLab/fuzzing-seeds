@@ -1,0 +1,7 @@
+.foo .bar {a: b}
+.baz {@extend .foo; @extend .bar}
+
+<===> output.css
+.foo .bar, .baz .bar, .foo .baz, .baz .baz {
+  a: b;
+}

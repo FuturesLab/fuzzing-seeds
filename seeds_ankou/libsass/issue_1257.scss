@@ -1,0 +1,7 @@
+.foo {
+  color: invert(red...);
+}
+<===> output.css
+.foo {
+  color: cyan;
+}

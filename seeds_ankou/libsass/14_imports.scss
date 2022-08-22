@@ -1,0 +1,16 @@
+@import "a.scss";
+
+foo {
+  blah: blah;
+  goo {
+    blee: blee;
+    @import "../14_imports/b.scss";
+    hello: world;
+  }
+  @import "sub/c.scss";
+}
+<===> sub/c.scss
+blux {
+  hey: another thing;
+  ho: will this work;
+}

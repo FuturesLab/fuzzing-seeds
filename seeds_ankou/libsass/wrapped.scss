@@ -1,0 +1,8 @@
+.my-scope {
+  @import 'include.scss';
+}
+<===> error
+Error: Properties are only allowed within rules, directives, mixin includes, or other properties.
+        on line 2 of include.scss
+        from line 2 of input.scss
+  Use --trace for backtrace.

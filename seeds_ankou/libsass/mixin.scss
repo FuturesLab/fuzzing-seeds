@@ -1,0 +1,20 @@
+@mixin c() {
+  @warn test;
+  c: d;
+}
+
+a {
+  b: {
+    @include c();
+  }
+}
+
+<===> output.css
+a {
+  b-c: d;
+}
+
+<===> warning
+WARNING: test
+         on line 2 of input.scss, in `c'
+         from line 8 of input.scss

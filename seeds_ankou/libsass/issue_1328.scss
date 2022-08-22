@@ -1,0 +1,12 @@
+#{bar},
+[foo="#{bar}"],
+[foo="#{bar}"] {
+    content: "foo";
+}
+
+<===> output.css
+bar,
+[foo="bar"],
+[foo="bar"] {
+  content: "foo";
+}

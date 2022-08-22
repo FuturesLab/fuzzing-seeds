@@ -1,0 +1,18 @@
+%a::-webkit-scrollbar {
+    color: green;
+}
+
+.a {
+    .b {
+        @extend %a;
+    }
+
+    .c .b {
+        @extend %a;
+    }
+}
+
+<===> output.css
+.a .b::-webkit-scrollbar, .a .c .b::-webkit-scrollbar {
+  color: green;
+}

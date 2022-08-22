@@ -1,0 +1,7 @@
+$key: 'bar';
+.test11#{'\@#{$key}'} { content: '1.1'; }
+
+<===> error
+Error: Invalid CSS after ".test11": expected selector, was "@bar"
+        on line 2 of input.scss
+  Use --trace for backtrace.

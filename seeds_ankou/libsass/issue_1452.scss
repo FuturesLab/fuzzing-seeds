@@ -1,0 +1,8 @@
+foo {
+  foo: foo(());
+}
+
+<===> error
+Error: () isn't a valid CSS value.
+        on line 2 of input.scss
+  Use --trace for backtrace.

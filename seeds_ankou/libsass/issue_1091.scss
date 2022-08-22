@@ -1,0 +1,17 @@
+.a {
+  top: 0;
+}
+
+.b .c {
+  @extend .a;
+}
+
+.d > .e {
+  @extend .a;
+  @extend .c;
+}
+
+<===> output.css
+.a, .b .c, .b .d > .e, .d > .e {
+  top: 0;
+}

@@ -1,0 +1,13 @@
+@mixin foo() {
+    foo: &;
+}
+
+foo {
+  @include foo { bar: baz }
+}
+
+<===> error
+Error: Mixin "foo" does not accept a content block.
+        on line 6 of input.scss, in `foo'
+        from line 6 of input.scss
+  Use --trace for backtrace.

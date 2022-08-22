@@ -1,0 +1,8 @@
+@import 'susy';
+
+<===> error
+Error: An @import loop has been found: _susy.scss imports itself
+        on line 1 of _susy.scss
+        from line 1 of _susy.scss
+        from line 1 of input.scss
+  Use --trace for backtrace.

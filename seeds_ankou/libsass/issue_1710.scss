@@ -1,0 +1,10 @@
+ul, ol {
+    & & {
+      display: block;
+    }
+  }
+
+<===> output.css
+ul ul, ol ul, ul ol, ol ol {
+  display: block;
+}

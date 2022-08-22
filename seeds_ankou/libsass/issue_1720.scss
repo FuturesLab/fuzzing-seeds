@@ -1,0 +1,8 @@
+.test {
+    a: a#{b//}c;
+}
+
+<===> error
+Error: Invalid CSS after "}": expected ";", was ""
+        on line 4 of input.scss
+  Use --trace for backtrace.

@@ -1,0 +1,9 @@
+// double comma at end of arglist
+.error {
+  @include double-comma-error($a,$b,,);
+}
+
+<===> error
+Error: Invalid CSS after "...ma-error($a,$b,": expected ")", was ",);"
+        on line 3 of input.scss
+  Use --trace for backtrace.

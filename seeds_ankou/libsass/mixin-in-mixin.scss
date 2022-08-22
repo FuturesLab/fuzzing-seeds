@@ -1,0 +1,10 @@
+@mixin mix() {
+  @mixin foo() {}
+}
+foo {
+  bar: include mix();
+}
+<===> error
+Error: Mixins may not be defined within control directives or other mixins.
+        on line 2 of input.scss
+  Use --trace for backtrace.

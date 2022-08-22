@@ -1,0 +1,6 @@
+$map: (a:b,c:d) + 1;
+
+<===> error
+Error: (a: b, c: d) isn't a valid CSS value.
+        on line 1 of input.scss
+  Use --trace for backtrace.

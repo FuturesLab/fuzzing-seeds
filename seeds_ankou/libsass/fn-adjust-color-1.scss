@@ -1,0 +1,7 @@
+foo {
+  test: adjust-color(red, $red: 0.5, $hue: 0.2);
+}
+<===> error
+Error: Cannot specify HSL and RGB values for a color at the same time for `adjust-color'
+        on line 2 of input.scss
+  Use --trace for backtrace.

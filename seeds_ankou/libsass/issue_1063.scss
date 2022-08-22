@@ -1,0 +1,13 @@
+%foo {
+  & > x { display: block; }
+}
+
+a {
+  > b { @extend %foo; }
+  > b > c { @extend %foo; }
+}
+
+<===> output.css
+a > b > x, a > b > c > x {
+  display: block;
+}

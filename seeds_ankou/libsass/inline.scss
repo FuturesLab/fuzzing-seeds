@@ -1,0 +1,16 @@
+a {
+  b: {
+    @debug test;
+    c: d;
+  }
+}
+
+<===> error
+Error: Illegal nesting: Only properties may be nested beneath properties.
+        on line 3 of input.scss
+  Use --trace for backtrace.
+
+<===> output-dart-sass.css
+a {
+  b-c: d;
+}

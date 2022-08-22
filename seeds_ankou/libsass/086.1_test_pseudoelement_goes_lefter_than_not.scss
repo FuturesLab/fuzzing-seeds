@@ -1,0 +1,16 @@
+%a {
+  x:y;
+}
+b:after:not(:first-child) {
+  @extend %a;
+}
+c:s {
+  @extend %a;  
+}
+d::e {
+  @extend c;
+}
+<===> output.css
+b:not(:first-child):after, c:s, d:s::e {
+  x: y;
+}

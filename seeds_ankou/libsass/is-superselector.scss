@@ -1,0 +1,7 @@
+@debug(is-superselector("foo", null));
+
+<===> error
+Error: $sub: null is not a valid selector: it must be a string,
+       a list of strings, or a list of lists of strings for `is-superselector'
+        on line 1 of input.scss
+  Use --trace for backtrace.

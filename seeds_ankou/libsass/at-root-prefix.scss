@@ -1,0 +1,15 @@
+test{
+  @at-root {
+    pre& {
+      foo {
+        bar: baz;
+      }
+    }
+  }
+}
+<===> error
+Error: Invalid CSS after "pre": expected "{", was "&"
+       
+       "&" may only be used at the beginning of a compound selector.
+        on line 3 of input.scss
+  Use --trace for backtrace.
